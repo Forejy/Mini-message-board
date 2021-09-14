@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  section
+    h1= title
+    p Welcome to #{title}
+  section
+    div
+      a(href="./new") Ajouter un message
+    each message in messages
+      div
+        div= message.user
+        div= message.text
+        div= message.added
+        br

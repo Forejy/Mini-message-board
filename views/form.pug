@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  section
+    form(method="POST" action="/new")
+      div
+        label(for="author") Enter your name :
+        input(type="text" name="author" id="author" required)
+      div
+        label(for="Message") Enter something there :
+        input(type="text" name="message" id="name" required)
+      div
+        input(type="submit" value="Send it !")
+  section
+    a(href="./") Messages
